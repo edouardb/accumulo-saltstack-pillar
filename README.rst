@@ -7,7 +7,7 @@ For your own provisioning you probably want to go with a fork of this.
 Master configuration
 ********************
 
-This particular or any of your pillar prjects can be used on a Salt master by pulling it in as-is through an ext_pillar configuration in **/etc/salt/master**.
+This particular or any of your pillar projects can be used on a Salt master by pulling it in as-is through an ext_pillar configuration in **/etc/salt/master**.
 
 ::
 
