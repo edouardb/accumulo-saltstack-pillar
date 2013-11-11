@@ -1,5 +1,6 @@
 base:
   '*':
+    - common
     - sun-java
     - hadoop
     - hadoop.hdfs
