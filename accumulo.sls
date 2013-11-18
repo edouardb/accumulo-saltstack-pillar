@@ -7,6 +7,7 @@ accumulo:
     source_hash: sha1=c2bacfd8abeb60d50d87820a4b9fabed92078370
 
   config:
+    instance_name: accumulo
     loglevel: WARN
     accumulo-site:
       trace.user:
