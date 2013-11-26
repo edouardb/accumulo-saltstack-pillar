@@ -1,5 +1,3 @@
-{% set mr_disks  = grains.get('mapred_data_disks', ['/data']) %}
-
 mapred:
   config:
     - jobtracker_port: 9001
