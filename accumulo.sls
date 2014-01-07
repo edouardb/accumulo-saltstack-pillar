@@ -1,13 +1,16 @@
 accumulo:
   version: 1.5.0
-  source: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-bin.tar.gz
+  source_url: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-bin.tar.gz
   sources:
-    source: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-src.tar.gz
-    source_hash: sha1=c2bacfd8abeb60d50d87820a4b9fabed92078370
-
+    source_url: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-src.tar.gz
+    version_name: accumulo-1.5.0-src
+  native:
+    source_url: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-src.tar.gz
+    version_name: accumulo-1.5.0-src
   config:
     instance_name: accumulo
-    loglevel: WARN
+    log_level: WARN
+    memory_profile: 512MB
     accumulo-site:
       trace.user:
         value: root
@@ -27,43 +30,3 @@ accumulo:
         value: org.apache.accumulo.core.security.crypto.CachingHDFSSecretKeyEncryptionStrategy
       crypto.default.key.strategy.cipher.suite:
         value: AES/ECB/NoPadding
-
-    accumulo-site-profiles:
-      512MB:
-        tserver.memory.maps.max:
-          value: 80M
-        tserver.cache.data.size:
-          value: 7M
-        tserver.cache.index.size:
-          value: 20M
-        tserver.sort.buffer.size:
-          value: 50M
-        tserver.walog.max.size:
-          value: 100M
-      1GB:
-        tserver.memory.maps.max:
-          value: 256M
-        tserver.cache.data.size:
-          value: 15M
-        tserver.cache.index.size:
-          value: 40M
-        tserver.sort.buffer.size:
-          value: 50M
-        tserver.walog.max.size:
-          value: 256M
-      2GB:
-        tserver.memory.maps.max:
-          value: 512M
-        tserver.cache.data.size:
-          value: 30M
-        tserver.cache.index.size:
-          value: 80M
-        tserver.walog.max.size:
-          value: 512M
-      3GB:
-        tserver.memory.maps.max:
-          value: 1G
-        tserver.cache.data.size:
-          value: 128M
-        tserver.cache.index.size:
-          value: 128M
