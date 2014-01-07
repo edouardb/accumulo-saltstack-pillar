@@ -1,2 +1,0 @@
-downloads_path: /downloads
-
