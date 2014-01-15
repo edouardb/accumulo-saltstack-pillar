@@ -6,3 +6,4 @@ base:
     - hadoop.mapred
     - accumulo
     - mvn
+    - hostsfile
