@@ -5,5 +5,5 @@ base:
     - hadoop.hdfs
     - hadoop.mapred
     - accumulo
-    - mvn
+    - maven
     - hostsfile
