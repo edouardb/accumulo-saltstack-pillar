@@ -38,7 +38,7 @@ Example:
           fs.trash.interval:
             value: 60
 
-Where the core-te part will appear in core-site.xml as:
+Where the core-site part will appear in core-site.xml as:
 ::
 
     <property>
