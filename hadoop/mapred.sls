@@ -1,7 +1,7 @@
 mapred:
   config:
-    - jobtracker_port: 9001
-    - mapred-site:
+    jobtracker_port: 9001
+    mapred-site:
       mapred.framework.name:
         value: yarn
       mapred.map.memory.mb:
