@@ -1,8 +1,8 @@
 hadoop:
   config:
-    - tmp_dir: /var/lib/hadoop/tmp
-    - directory: /etc/hadoop/conf
-    - core-site:
+    tmp_dir: /var/lib/hadoop/tmp
+    directory: /etc/hadoop/conf
+    core-site:
       io.native.lib.available:
         value: true
       io.file.buffer.size:
