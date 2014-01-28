@@ -1,6 +1,6 @@
 hadoop:
   config:
-    tmp_dir: /var/lib/hadoop/tmp
+    tmp_dir: /tmp
     directory: /etc/hadoop/conf
     core-site:
       io.native.lib.available:
