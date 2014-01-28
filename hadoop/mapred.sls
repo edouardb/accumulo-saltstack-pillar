@@ -2,7 +2,7 @@ mapred:
   config:
     jobtracker_port: 9001
     mapred-site:
-      mapred.framework.name:
+      mapreduce.framework.name:
         value: yarn
       mapred.map.memory.mb:
         value: 1536
