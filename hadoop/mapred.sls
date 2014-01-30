@@ -1,6 +1,9 @@
 mapred:
   config:
     jobtracker_port: 9001
+    jobtracker_http_port: 50030
+    jobhistory_port: 10020
+    jobhistory_webapp_port: 19888
     history_dir: /mr-history
     mapred-site:
       mapreduce.framework.name:
@@ -19,7 +22,3 @@ mapred:
         value: 100
       mapred.reduce.shuffle.parallelcopies:
         value: 50
-      mapreduce.jobhistory.address:
-        value: 10020
-      mapreduce.jobhistory.webapp.address:
-        value: 19888
