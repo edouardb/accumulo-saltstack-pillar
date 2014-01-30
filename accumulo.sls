@@ -12,6 +12,10 @@ accumulo:
     log_level: WARN
     memory_profile: 512MB
     accumulo-site:
+      table.cache.block.enable:
+        value: 'true'
+      table.cache.index.enable:
+        value: 'true'
       trace.user:
         value: root
       crypto.module.class:
