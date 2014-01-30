@@ -1,6 +1,7 @@
 mapred:
   config:
     jobtracker_port: 9001
+    history_dir: /mr-history
     mapred-site:
       mapreduce.framework.name:
         value: yarn
@@ -22,7 +23,3 @@ mapred:
         value: 10020
       mapreduce.jobhistory.webapp.address:
         value: 19888
-      mapreduce.jobhistory.intermediate-done-dir:
-        value: /mr-history/tmp
-      mapreduce.jobhistory.done-dir:
-        value: /mr-history/done
