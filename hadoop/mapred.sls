@@ -18,4 +18,11 @@ mapred:
         value: 100
       mapred.reduce.shuffle.parallelcopies:
         value: 50
-
+      mapreduce.jobhistory.address:
+        value: 10020
+      mapreduce.jobhistory.webapp.address:
+        value: 19888
+      mapreduce.jobhistory.intermediate-done-dir:
+        value: /mr-history/tmp
+      mapreduce.jobhistory.done-dir:
+        value: /mr-history/done
