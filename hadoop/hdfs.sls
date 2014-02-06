@@ -6,10 +6,10 @@ hdfs:
     # the number of hdfs replicas is normally auto-configured for you by the hadoop-formula
     # according to the number of available datanodes
     # replication: 1
-  hdfs-site:
-    dfs.permission:
-      value: false
-    dfs.durable.sync:
-      value: true
-    dfs.datanode.synconclose:
-      value: true
+    hdfs-site:
+      dfs.permission:
+        value: 'false'
+      dfs.durable.sync:
+        value: 'true'
+      dfs.datanode.synconclose:
+        value: 'true'

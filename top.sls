@@ -4,6 +4,7 @@ base:
     - hadoop
     - hadoop.hdfs
     - hadoop.mapred
+    - hadoop.yarn
     - accumulo
     - maven
     - hostsfile
