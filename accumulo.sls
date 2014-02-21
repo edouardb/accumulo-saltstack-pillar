@@ -1,12 +1,6 @@
 accumulo:
   version: 1.5.0
-  source_url: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-bin.tar.gz
-  sources:
-    source_url: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-src.tar.gz
-    version_name: accumulo-1.5.0-src
-  native:
-    source_url: http://www.us.apache.org/dist/accumulo/1.5.0/accumulo-1.5.0-src.tar.gz
-    version_name: accumulo-1.5.0-src
+  source_url: http://apache.osuosl.org/accumulo/1.5.0/accumulo-1.5.0-bin.tar.gz
   config:
     instance_name: accumulo
     log_level: WARN
@@ -21,7 +15,7 @@ accumulo:
       crypto.module.class:
         value: org.apache.accumulo.core.security.crypto.DefaultCryptoModule
       crypto.cipher.suite:
-        value: AES/CFB/PKCS5Padding
+        value: AES/CFB/NoPadding
       crypto.cipher.algorithm.name:
         value: AES
       crypto.cipher.key.length:
