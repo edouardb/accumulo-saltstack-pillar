@@ -1,6 +1,6 @@
 accumulo:
-  version: 1.5.0
-  source_url: http://apache.osuosl.org/accumulo/1.5.0/accumulo-1.5.0-bin.tar.gz
+  version: 1.5.1
+  source_url: http://apache.osuosl.org/accumulo/1.5.1/accumulo-1.5.1-bin.tar.gz
   config:
     instance_name: accumulo
     log_level: WARN
