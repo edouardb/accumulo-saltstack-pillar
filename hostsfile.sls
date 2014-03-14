@@ -1,2 +1,3 @@
 hostsfile:
-  generate_shortname: True
+  generate_shortname: False
+
